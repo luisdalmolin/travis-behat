@@ -13,8 +13,7 @@ before_script:
   - selenium-standalone install
   - composer install --prefer-dist
   - chmod 777 -R storage
-  - selenium-standalone start
-  - php artisan serve
+  - sh travis-env.sh
 
 script:
   - vendor/bin/behat
