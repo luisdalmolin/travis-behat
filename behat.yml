@@ -12,5 +12,3 @@ default:
                 default:
                     chrome:
                         api_url: "http://localhost:9222"
-#            selenium2:
-#                wd_host: "http://0.0.0.0:4444/wd/hub"
