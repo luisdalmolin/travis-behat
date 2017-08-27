@@ -16,6 +16,7 @@ before_script:
   - selenium-standalone install
   - composer install --prefer-dist
   - chmod 777 -R storage
+  - google-chrome-unstable --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222
 
 script:
   - sh travis-env.sh
