@@ -13,7 +13,7 @@ before_script:
   - selenium-standalone install
   - composer install --prefer-dist
   - chmod 777 -R storage
-  - sh travis-env.sh
 
 script:
+  - sh travis-env.sh
   - vendor/bin/behat
