@@ -12,8 +12,6 @@ cache:
     - $HOME/.composer/cache
 
 before_script:
-  - npm install selenium-standalone@latest -g
-  - selenium-standalone install
   - composer install --prefer-dist
   - chmod 777 -R storage
   - cp .env.behat .env
