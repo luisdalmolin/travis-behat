@@ -11,9 +11,8 @@ cache:
 before_script:
   - npm install selenium-standalone@latest -g
   - selenium-standalone install
-  - yarn
   - composer install --prefer-dist
-  - chmod 777 -R app/storage
+  - chmod 777 -R storage
   - selenium-standalone start
   - php artisan serve
 
