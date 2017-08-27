@@ -12,11 +12,10 @@ before_script:
   - npm install selenium-standalone@latest -g
   - selenium-standalone install
   - yarn
-  - npm install
   - composer install --prefer-dist
-  - mv bootstrap/environment_travis.php bootstrap/environment.php
   - chmod 777 -R app/storage
   - selenium-standalone start
+  - php artisan serve
 
 script:
   - vendor/bin/behat
